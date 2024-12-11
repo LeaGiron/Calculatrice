@@ -1,0 +1,126 @@
+/* Styles généraux */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0e6f6; 
+    font-family: 'Arial', sans-serif;
+}
+
+/* Logo rond en haut de la calculatrice */
+.logo-container {
+    width: 50px; 
+    height: 50px;
+    background-color: #f56d8c; 
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 20px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+/* Icône de calculatrice */
+.logo-icon {
+    font-size: 24px;
+    color: #fff; 
+}
+
+
+/* Style principal de la calculatrice */
+#calculatrice {
+    text-align: center;
+    background-color: #fff;
+    border-radius: 25px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+    width: 300px; 
+    box-sizing: border-box;
+    font-family: 'Share Tech Mono', monospace;
+    border: 3px solid #f56d8c;
+}
+
+/* Zone d'affichage de la calculatrice */
+.aff {
+    width: 100%;
+    height: 40px;
+    font-size: 20px; 
+    text-align: right;
+    padding: 10px;
+    background-color: #fff1f3;
+    border: 2px solid #f56d8c;
+    border-radius: 15px; 
+    margin-bottom: 15px;
+    color: #333;
+    box-sizing: border-box;
+    font-family: 'Share Tech Mono', monospace;
+}
+
+/* Conteneur des boutons */
+.conteneur {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Zone des boutons */
+.bouton {
+    width: 50px; 
+    height: 50px;
+    font-size: 18px; 
+    background-color: #f56d8c;
+    color: #fff;
+    border: none;
+    border-radius: 50%; 
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    font-family: 'Share Tech Mono', monospace;
+}
+
+/* Effet au survol des boutons */
+.bouton:hover {
+    background-color: #ec4d68;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Effet au clic des boutons */
+.bouton:active {
+    transform: translateY(2px);
+}
+
+/* Boutons spécifiques */
+.bouton-fonction {
+    background-color: #ff919e; 
+}
+
+/* Boutons numériques */
+.bouton-num {
+    background-color: #f56d8c;
+}
+
+.bouton-num:hover {
+    background-color: #ec4d68;
+}
+
+/* Boutons fonctionnels et opérateurs */
+.bouton-fonction, .bouton-op {
+    background-color: #f56d8c;
+}
+
+.bouton-fonction:hover, .bouton-op:hover {
+    background-color: #ec4d68; 
+}
+
+.bouton-fonction:active, .bouton-op:active {
+    transform: translateY(2px); 
+}
+
+/* Disposition des lignes */
+.ligne1, .ligne2, .ligne3, .ligne4, .ligne5 {
+    display: flex;
+    justify-content: space-between;
+}

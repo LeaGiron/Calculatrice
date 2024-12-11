@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../Projet JavaScript Calculatrice/style.css" />
+    <title>Calculatrice</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <div id="calculatrice">
+    <div class="logo-container">
+        <i class="bi bi-calculator logo-icon"></i>
+    </div>
+
+        <form name="aff">
+            <!-- Champ pour afficher l'expression et le résultat -->
+            <input type="text" id="calcul" class="aff" value="" disabled="disabled">
+            <input type="text" id="resultat" class="aff" value="" disabled="disabled">
+        </form>
+
+        <div class="conteneur">
+            <div class="ligne1">
+                <button class="bouton bouton-fonction" onclick="reinitialiser()">C</button>
+                <button class="bouton bouton-fonction" onclick="effacerDerniereEntree()">CE</button>
+                <button class="bouton bouton-fonction" onclick="ajouterParenthese()">()</button>
+                <button class="bouton bouton-op" onclick="ajouterOperateur('/')">/</button>
+            </div>
+
+            <div class="ligne2">
+                <button class="bouton bouton-num" onclick="ajouterNombre(7)">7</button>
+                <button class="bouton bouton-num" onclick="ajouterNombre(8)">8</button>
+                <button class="bouton bouton-num" onclick="ajouterNombre(9)">9</button>
+                <button class="bouton bouton-op" onclick="ajouterOperateur('*')">*</button>
+            </div>
+
+            <div class="ligne3">
+                <button class="bouton bouton-num" onclick="ajouterNombre(4)">4</button>
+                <button class="bouton bouton-num" onclick="ajouterNombre(5)">5</button>
+                <button class="bouton bouton-num" onclick="ajouterNombre(6)">6</button>
+                <button class="bouton bouton-op" onclick="ajouterOperateur('-')">-</button>
+            </div>
+
+            <div class="ligne4">
+                <button class="bouton bouton-num" onclick="ajouterNombre(1)">1</button>
+                <button class="bouton bouton-num" onclick="ajouterNombre(2)">2</button>
+                <button class="bouton bouton-num" onclick="ajouterNombre(3)">3</button>
+                <button class="bouton bouton-op" onclick="ajouterOperateur('+')">+</button>
+            </div>
+
+            <div class="ligne5">
+                <button class="bouton" onclick="changerSigne()">+/-</button>
+                <button class="bouton bouton-num" onclick="ajouterNombre(0)">0</button>
+                <button class="bouton" onclick="ajouterPoint()">.</button>
+                <button class="bouton" onclick="calculerSomme()">=</button>
+            </div>
+            
+        </div>
+    </div>
+
+    <script src="../Projet JavaScript Calculatrice/calc.js"></script>
+</body>
+</html>
